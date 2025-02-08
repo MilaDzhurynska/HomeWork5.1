@@ -9,25 +9,19 @@ public class Main {
         - більше 25000, за ставкою 6,7%.
          */
 
-        int income = 120_000; //створюємо змінну "уявний дохід"
-        int incomeLev1 = 10_000;//макс рівень доходу для податків за ставкою 2,5%.
-        int incomeLev2 = 25_000;//макс рівень доходу для податків за ставкою 4,3%.
-
+        int income = 1000_000; //мріяти ніхто не забороняв ;)
         double tax;
-        double taxP1 = 2.5;
-        double taxP2 = 4.3;
-        double taxP3 = 6.7;
 
-        if (income <= incomeLev1) {
-            tax = (income * taxP1) / 100;
+        if (income <= 10000) {
+            tax = (income * 2.5) / 100;
             System.out.println("Tax = " + tax);
 
-        } else if (income > incomeLev1 & income <= incomeLev2) {
-            tax = (income * taxP2) / 100;
+        } else if (income > 10000 & income <= 25000) {
+            tax = (income * 4.3) / 100;
             System.out.println("Tax = " + tax);
 
-        } else if (income >incomeLev2) {
-            tax = (income * taxP3) / 100;
+        } else if (income >25000) {
+            tax = (income * 6.7) / 100;
             System.out.println("Tax = " + tax);
 
         }
