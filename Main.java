@@ -14,17 +14,13 @@ public class Main {
 
         if (income <= 10000) {
             tax = (income * 2.5) / 100;
-            System.out.println("Tax = " + tax);
 
-        } else if (income > 10000 & income <= 25000) {
+        } else if (income <= 25000) {
             tax = (income * 4.3) / 100;
-            System.out.println("Tax = " + tax);
 
-        } else if (income >25000) {
+        } else {
             tax = (income * 6.7) / 100;
-            System.out.println("Tax = " + tax);
-
         }
-
+        System.out.println("Tax = " + tax);
     }
 }
